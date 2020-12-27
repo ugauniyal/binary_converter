@@ -89,7 +89,7 @@ class BinaryConverter():
 
         value = [str(x) for x in value]
 
-        print(''.join(value))
+        print("Your answer is:", ''.join(value))
         print("\n")
 
 
@@ -108,6 +108,7 @@ class BinaryConverter():
         
         rev = 0
 
+
         while (sum > 0) : 
             rev = rev * 10 + (sum % 10)
             sum = sum // 10
@@ -120,6 +121,7 @@ class BinaryConverter():
 
             rev = rev // 10
 
+        print('is your answer')
                 
 
 
@@ -133,16 +135,13 @@ class BinaryConverter():
                     sum = sum + 2 ** i
 
         sum = list(str(sum))
-        print(sum)
 
         for i in range(len(sum)):
             sum[i] = int(sum[i]) + 3
 
-        print(sum)
 
         sum = [str(x) for x in sum]
 
-        print(sum)
 
         for i in range(len(sum)):
         
@@ -194,7 +193,7 @@ class BinaryConverter():
             elif sum[i] == '15':
                 sum[i] = '1111'
 
-        print("".join(sum))
+        print("Your answer is:", "".join(sum))
 
     
     
@@ -239,7 +238,7 @@ class BinaryConverter():
 
         value = [str(x) for x in value]
 
-        print(''.join(value))
+        print("Your answer is:", ''.join(value))
         print("\n")
 
 
@@ -311,13 +310,10 @@ class BinaryConverter():
             if len(data[i]) == 0:
                 data.remove(data[i])
 
-        print(data)
         data.reverse()
-        print(data)
 
 
 
-        print(data)
 
         for i in range(len(data)):
         
@@ -368,8 +364,6 @@ class BinaryConverter():
 
             elif data[i] == '1111':
                 data[i] = '15'
-
-        print("".join(data))
 
         for i in range(len(data)):
             data[i] = int(data[i]) - 3
